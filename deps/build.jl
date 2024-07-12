@@ -1,3 +1,15 @@
+####
+## Issues
+Offending DLL files in the <install directory>\bin\win64\ directory
+libgit2.dll
+libssh2.dll
+
+They were renamed to *.backup files, then Mex.jl was re-built, which allows Mex to run successfully.
+
+Renaming these DLL files requires administrator privileges, so this is not a viable solution for corporate IT environments.
+######
+
+
 import Libdl
 
 # the following functions are adapted from the julia-config.jl script and are used to
